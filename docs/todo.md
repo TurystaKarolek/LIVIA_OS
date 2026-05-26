@@ -8,14 +8,14 @@
 - [ ] Define orchestrator logic
 - [ ] Design memory workflows
 - [ ] Create local AI integration plan
-- [ ] Design terminal interface
+- [x] Design terminal interface
 
 ---
 
 # Core Systems
 
 - [x] Define agent communication
-- [x] Design module lifecycle
+- [x] Define module lifecycle
 - [ ] Create configuration structure
 - [ ] Plan vector database integration
 - [ ] Dynamic module loading
@@ -51,7 +51,7 @@
 
 - [ ] Expand architecture docs
 - [ ] Add module diagrams
-- [ ] Create development journal
+- [x] Create development journal
 - [ ] Add screenshots and concepts
 
 ---
