@@ -27,6 +27,7 @@
 - [x] Runtime logging system
 - [x] Configuration loader
 - [ ] Local AI connector
+- [x] Create base module system
 
 ---
 
