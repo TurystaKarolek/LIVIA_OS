@@ -30,7 +30,9 @@ def main():
         print("4. Show config")
         print("5. Unload Echo-Link")
         print("6. Test AI provider")
-        print("7. Exit")
+        print("7. Store memory")
+        print("8. Show memory")
+        print("9. Exit")
 
         choice = input("> ")
 
@@ -60,9 +62,21 @@ def main():
 
             print()
             print(response)
-            
 
         elif choice == "7":
+            entry = input("Memory entry: ")
+
+            kernel.memory.store(entry)
+
+            print()
+            print("Memory stored.")
+
+        elif choice == "8":
+            print()
+            print(kernel.memory.recall())
+            
+
+        elif choice == "9":
             print()
             print("Shutting down LIVIA OS...")
             break
