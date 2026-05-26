@@ -20,8 +20,13 @@
 - [ ] Plan vector database integration
 - [ ] Dynamic module loading
 - [ ] Module dependency system
-- [ ] Event bus system
-- [ ] Shared runtime context
+- [x] Event bus system
+- [x] Shared runtime context
+- [ ] Dynamic module discovery
+- [ ] Module dependency handling
+- [ ] Runtime logging system
+- [ ] Configuration loader
+- [ ] Local AI connector
 
 ---
 
