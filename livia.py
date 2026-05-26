@@ -7,6 +7,13 @@ def main():
 
     echo_link = EchoLink()
     kernel.register_module(echo_link)
+    
+    kernel.events.subscribe(
+    "system_start",
+    echo_link.on_system_start
+)
+
+    kernel.events.emit("system_start")
 
     while True:
         print()
