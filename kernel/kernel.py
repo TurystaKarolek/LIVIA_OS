@@ -2,6 +2,7 @@ from kernel.events import EventBus
 from kernel.context import RuntimeContext
 from kernel.logger import Logger
 from config.config_loader import ConfigLoader
+from modules.module_registry import AVAILABLE_MODULES
 
 class Kernel:
     def __init__(self):
@@ -12,6 +13,12 @@ class Kernel:
         
         self.config_loader = ConfigLoader()
         self.config = self.config_loader.load()
+
+    def load_all_modules(self):
+        
+        for module_class in AVAILABLE_MODULES:
+            module = module_class()
+            self.register_module(module)
     
     def register_module(self, module):
         self.modules[module.name] = module
