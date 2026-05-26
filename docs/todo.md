@@ -14,10 +14,14 @@
 
 # Core Systems
 
-- [ ] Define agent communication
-- [ ] Design module lifecycle
+- [x] Define agent communication
+- [x] Design module lifecycle
 - [ ] Create configuration structure
 - [ ] Plan vector database integration
+- [ ] Dynamic module loading
+- [ ] Module dependency system
+- [ ] Event bus system
+- [ ] Shared runtime context
 
 ---
 
