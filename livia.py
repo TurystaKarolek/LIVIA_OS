@@ -17,14 +17,17 @@ def main():
 
     kernel.context.set("system_mode", "development")
 
+    kernel.context.set("config", SYSTEM_CONFIG)
+
     while True:
         print()
         print("=== LIVIA OS ===")
         print("1. List modules")
         print("2. System status")
         print("3. Show runtime context")
-        print("4. Unload Echo-Link")
-        print("5. Exit")
+        print("4. Show config")
+        print("5. Unload Echo-Link")
+        print("6. Exit")
 
         choice = input("> ")
 
@@ -42,9 +45,13 @@ def main():
             print(kernel.context.dump())
 
         elif choice == "4":
-            kernel.unload_module("Echo-Link")
+            print()
+            print(kernel.context.get("config"))
 
         elif choice == "5":
+            kernel.unload_module("Echo-Link")
+
+        elif choice == "6":
             print()
             print("Shutting down LIVIA OS...")
             break
