@@ -1,6 +1,7 @@
 from kernel.events import EventBus
 from kernel.context import RuntimeContext
 from kernel.logger import Logger
+from config.config_loader import ConfigLoader
 
 class Kernel:
     def __init__(self):
@@ -9,6 +10,9 @@ class Kernel:
         self.context = RuntimeContext()
         self.logger = Logger()
         
+        self.config_loader = ConfigLoader()
+        self.config = self.config_loader.load()
+    
     def register_module(self, module):
         self.modules[module.name] = module
 
