@@ -17,7 +17,7 @@ def main():
 
     kernel.context.set("system_mode", "development")
 
-    kernel.context.set("config", SYSTEM_CONFIG)
+    kernel.context.set("config", kernel.config)
 
     while True:
         print()
