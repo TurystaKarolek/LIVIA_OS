@@ -1,9 +1,11 @@
 from kernel.events import EventBus
+from kernel.context import RuntimeContext
 
 class Kernel:
     def __init__(self):
         self.modules = {}
-         self.events = EventBus()
+        self.events = EventBus()
+        self.context = RuntimeContext()
 
     def register_module(self, module):
         self.modules[module.name] = module
