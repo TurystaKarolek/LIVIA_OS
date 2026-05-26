@@ -1,6 +1,9 @@
+from kernel.events import EventBus
+
 class Kernel:
     def __init__(self):
         self.modules = {}
+         self.events = EventBus()
 
     def register_module(self, module):
         self.modules[module.name] = module
