@@ -5,8 +5,7 @@ from config.system_config import SYSTEM_CONFIG
 def main():
     kernel = Kernel()
 
-    echo_link = EchoLink()
-    kernel.register_module(echo_link)
+    kernel.load_all_modules()
     
     kernel.events.subscribe(
     "system_start",
