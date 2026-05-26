@@ -29,6 +29,7 @@
 - [ ] Local AI connector
 - [x] Create base module system
 - [x] Create memory management foundation
+- [x] Create provider abstraction layer
 ---
 
 # UI / UX
