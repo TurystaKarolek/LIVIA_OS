@@ -25,7 +25,7 @@
 - [ ] Dynamic module discovery
 - [ ] Module dependency handling
 - [x] Runtime logging system
-- [ ] Configuration loader
+- [x] Configuration loader
 - [ ] Local AI connector
 
 ---
