@@ -1,6 +1,8 @@
-class EchoLink:
+from modules.base_module import BaseModule
+
+class EchoLink(BaseModule):
     def __init__(self):
-        self.name = "Echo-Link"
+         super().__init__("Echo-Link")
 
     def initialize(self):
         print("[Echo-Link] Module initialized.")
