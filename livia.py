@@ -1,6 +1,7 @@
 from kernel.kernel import Kernel
 from modules.echo_link import EchoLink
 from config.system_config import SYSTEM_CONFIG
+from providers.mock_provider import MockProvider
 
 def main():
     kernel = Kernel()
@@ -18,6 +19,8 @@ def main():
 
     kernel.context.set("config", kernel.config)
 
+    provider = MockProvider()
+
     while True:
         print()
         print("=== LIVIA OS ===")
@@ -26,7 +29,8 @@ def main():
         print("3. Show runtime context")
         print("4. Show config")
         print("5. Unload Echo-Link")
-        print("6. Exit")
+        print("6. Test AI provider")
+        print("7. Exit")
 
         choice = input("> ")
 
@@ -51,6 +55,14 @@ def main():
             kernel.unload_module("Echo-Link")
 
         elif choice == "6":
+            prompt = input("Prompt: ")
+            response = provider.generate(prompt)
+
+            print()
+            print(response)
+            
+
+        elif choice == "7":
             print()
             print("Shutting down LIVIA OS...")
             break
