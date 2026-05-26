@@ -1,6 +1,6 @@
 from kernel.kernel import Kernel
 from modules.echo_link import EchoLink
-
+from config.system_config import SYSTEM_CONFIG
 
 def main():
     kernel = Kernel()
