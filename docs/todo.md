@@ -28,7 +28,7 @@
 - [x] Configuration loader
 - [ ] Local AI connector
 - [x] Create base module system
-
+- [x] Create memory management foundation
 ---
 
 # UI / UX
